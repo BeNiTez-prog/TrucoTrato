@@ -40,18 +40,29 @@ public class ruletaTrucoTrato {
     private void girar() {
         girarButton.setDisable(true);
         resultadoLabel.setText("");
-
         ruletaImage.setRotate(0);
 
+        // 1. Pre-calculate the final angle and the result
+        Random random = new Random();
+        int finalAngle = random.nextInt(360);
+        String resultado;
+
+        // 2. Determine result based on the angle (0-179 is TRUCO, 180-359 is TRATO)
+        if (finalAngle < 180) {
+            resultado = "TRUCO";
+        } else {
+            resultado = "TRATO";
+        }
+
+        // 3. Calculate total rotation to land on that angle
+        int fullSpins = 5;
+        double totalRotation = (360 * fullSpins) + finalAngle;
+
+        // 4. Set up and play the animation
         RotateTransition rt = new RotateTransition(Duration.seconds(3), ruletaImage);
-        rt.setByAngle(360 * 5 + new Random().nextInt(360));
+        rt.setByAngle(totalRotation);
         rt.setOnFinished(event -> {
-            String resultado;
-            if (new Random().nextBoolean()) {
-                resultado = "TRUCO";
-            } else {
-                resultado = "TRATO";
-            }
+            // 5. Show the pre-calculated result and re-enable the button
             resultadoLabel.setText(resultado);
             girarButton.setDisable(false);
         });
