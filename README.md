@@ -49,6 +49,11 @@ Esta aplicación simula una pequeña experiencia de Halloween en dos fases:
 
 
 ---
+<img width="748" height="536" alt="image" src="https://github.com/user-attachments/assets/6bf439a0-ea55-4b26-bf11-a46d55a2f3cb" />
+
+<img width="746" height="534" alt="image" src="https://github.com/user-attachments/assets/f644c81e-3b2a-45b6-b8f0-a75956a2faf5" />
+
+
 
 
   
