@@ -50,8 +50,5 @@ Esta aplicación simula una pequeña experiencia de Halloween en dos fases:
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
 
-1. Clona el repositorio:
-   ```bash
   
