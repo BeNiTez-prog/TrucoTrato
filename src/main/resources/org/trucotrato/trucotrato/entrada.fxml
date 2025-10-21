@@ -15,6 +15,7 @@
             <Image url="@imagen/fotoHalloween.png" />
          </image>
       </ImageView>
+      <Label alignment="CENTER" layoutX="0.0" layoutY="30.0" prefWidth="600.0" styleClass="title-label" text="BIENVENIDO AL TUNEL DEL TERROR" />
       <Label layoutX="179.0" layoutY="87.0" text="Nombre" />
       <TextField fx:id="nombreField" layoutX="255.0" layoutY="83.0" />
       <Label layoutX="179.0" layoutY="132.0" text="Apellidos" />

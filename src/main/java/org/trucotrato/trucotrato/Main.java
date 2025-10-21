@@ -18,6 +18,7 @@ public class Main extends Application {
         scene.getStylesheets().add(getClass().getResource("halloween.css").toExternalForm());
         primaryStage.setTitle("Túnel del Terror");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

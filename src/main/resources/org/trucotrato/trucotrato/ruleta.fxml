@@ -11,6 +11,7 @@
             <Image url="@imagen/fotoHalloween.png" />
          </image>
       </ImageView>
+      <Label alignment="CENTER" layoutX="0.0" layoutY="30.0" prefWidth="600.0" styleClass="title-label" text="¡SUERTE!" />
       <Label fx:id="nombreLabel" layoutX="50.0" layoutY="50.0" />
       <Label fx:id="cursoLabel" layoutX="50.0" layoutY="80.0" />
       <ImageView fx:id="ruletaImage" fitHeight="200.0" fitWidth="200.0" layoutX="200.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
