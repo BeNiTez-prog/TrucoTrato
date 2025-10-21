@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.trucotrato.trucotrato.ruletaTrucoTrato">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="false">
+         <image>
+            <Image url="@imagen/fotoHalloween.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nombreLabel" layoutX="50.0" layoutY="50.0" />
+      <Label fx:id="cursoLabel" layoutX="50.0" layoutY="80.0" />
+      <ImageView fx:id="ruletaImage" fitHeight="200.0" fitWidth="200.0" layoutX="200.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagen/ruletainterior.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="370.0" fitWidth="392.0" layoutX="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagen/ruletaexterna.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="girarButton" layoutX="270.0" layoutY="320.0" mnemonicParsing="false" onAction="#girar" text="GIRAR" />
+      <Label fx:id="resultadoLabel" alignment="CENTER" layoutX="0" layoutY="360.0" prefWidth="600.0" styleClass="result-label" />
+   </children>
+</AnchorPane>
